@@ -25,4 +25,4 @@ class CharacterOut(BaseModel):
     features: str | None = None
 
     class Config:
-        allow_population_by_field_name = True  # Позволяет использовать class_ при возврате
+        validate_by_name = True  # Позволяет использовать class_ при возврате
